@@ -88,8 +88,6 @@ end infinite loop
 | B Functionality | Complete | 10 September 14 |
 | A Functionality | Complete | 10 September 14 |
 
-<<<<<<< HEAD
-=======
 ### Required Functionality
 The required functionality was to set the inputs and outputs of the calclator in memory locations. The input was in ROM, starting at the memory location of 0xc000. The output was stored in RAM, starting with the location, 0x0200. Furthermore, the input operands and output results were required to be within the range of 0 to 255 (unsigned byte).
 
@@ -164,7 +162,7 @@ The A functionality consisted of creating a multiplication operation in the prog
 
 Eventually, I used a method called *shift and add*, which fulfilled the requirement of working at O(log n) time. This method takes in two values, A and B. The first value is shifted to the right by one bit. This basically divides the value (let us say A) in half. The other value is shifted to the left by one bit. As we know, this basically multiplies the value (let us say B) by 2. If A/2 leaves a carry bit, then the corresponding B value is added to the result. *NOTE:* the result is cleared to zero before the multiplication process begins. If A/2 does not leave a carry bit (even answer), then the corresponding B value is not added onto the final product. An example of this process is shown below where A = 11 and B = 3:
 
-![alt test](https://raw.githubusercontent.com/sabinpark/ECE382_Lab1/master/shift_add.PNG "shift and add example")
+![alt test](https://raw.githubusercontent.com/sabinpark/ECE382_Lab1/master/images/shift_add.PNG "shift and add example")
 
 *NOTE:* the value corresponding to this multiplication operation was set to the constant value of 0x33.
 
@@ -201,9 +199,8 @@ Result: 0x44, 0x11, 0x88, 0x00, 0x00, 0x00, 0xff, 0x00, 0xff, 0x00, 0x00, 0xff
 
 ### Conclusion
 The simple calculator turned out to be a success. It properly read in values from ROM, performed the appropriate calculations, and finally stored the correct results in RAM. All parts of the functionality were met in this lab. I learned the importance of having solid pseudo code to help out with actual programming. Not having solid pseudo code in the beginning made it very confusing to follow my train of thought and complete the assignment. However, after reworking parts of my pseudo code, I was able to quickly accomplish the task and pick out the minor details that may haved resulted in bugs. This lab was also useful for me to understand the importance of using breakpoints while debugging my program.
->>>>>>> c6ef32a14447025725585bc632acd501d13e5adf
 
 
 ## Documentation
 I used Wikipedia to find information on how to efficiently do multiplication. I followed the example labeled as "peasant multiplication". Link is:  http://en.wikipedia.org/wiki/Multiplication_algorithm
-I also received EI from Dr. Coulston to review the methodology needed for setting the pointer register. No other help received.
+I also received EI from Dr. Coulston to review the methodology needed for setting the pointer register. No other help received. *UPDATE:* Dr. Coulston assisted me in creating my folders (code and images). For some reason, parts of the readme file have been altered after this change; I have searched through the readme and corrected the unexpected changes.
