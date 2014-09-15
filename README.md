@@ -7,7 +7,7 @@ The purpose of Lab 1 is to familiarize myself with the MSP430 and create my firs
 ## Prelab
 
 #### Flowchart
-![alt test](https://raw.githubusercontent.com/sabinpark/ECE382_Lab1/master/flowchart.jpg "Lab 1 Flowchart")
+![alt test](https://raw.githubusercontent.com/sabinpark/ECE382_Lab1/master/images/flowchart.jpg "Lab 1 Flowchart")
 
 #### Pseudo Code
 
